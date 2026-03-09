@@ -10,7 +10,7 @@ on:
 jobs:
   code_clone: 
     name: clone-code
-    runs-on: ubundu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: checkout code
