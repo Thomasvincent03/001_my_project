@@ -1,0 +1,17 @@
+# clone the github codes
+
+name: code-clone
+
+on:
+  push:
+  pull_request:
+    branch:
+      - master
+jobs:
+  code_clone: 
+    name: clone-code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
