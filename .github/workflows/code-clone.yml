@@ -1,0 +1,17 @@
+# clone the github codes
+
+name: code-clone
+
+on:
+  push:
+  pull request:
+    branch:
+      - master
+jobs:
+  code_clone: 
+    name: clone-code
+    runs-on: ubundu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
